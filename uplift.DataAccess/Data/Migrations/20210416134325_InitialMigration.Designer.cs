@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Uplift.DataAccess.Data;
 
-namespace uplift.DataAccess.Migrations
+namespace uplift.DataAccess.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210416071848_AddingFrequencyToDb")]
-    partial class AddingFrequencyToDb
+    [Migration("20210416134325_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
