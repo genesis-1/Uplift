@@ -62,12 +62,13 @@ namespace Uplift.Areas.Admin.Controllers
 
         #region Api Calls
 
-        [HttpGet]
+        //[HttpGet]
         public IActionResult GetAll()
         {
+            var datalist = _unitOfWork.Frequency.GetAll();
             return Json(new 
             {
-                data = _unitOfWork.Frequency.GetAll()
+                data = datalist
             });
 
         }
